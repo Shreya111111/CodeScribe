@@ -16,7 +16,7 @@ pre {
 
 /* Hover effect for primary button */
 .btn-primary:hover {
-  background-color: #7f3ebb !important; /* Purple color */
+  background-color: purple !important; /* Purple color */
 }
 
 /* Responsive design for footer at max-width: 768px */

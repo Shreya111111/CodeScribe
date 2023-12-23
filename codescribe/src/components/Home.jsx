@@ -1,10 +1,15 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import sh1 from "../Assets/web-development_2282272.png";
+import sh2 from "../Assets/coding_1045981.png";
+import sh3 from "../Assets/html_6443507.png";
+import sh6 from "../Assets/web-development_2282272.png";
+import homeImg from "../Assets/971.jpg";
 import { Link } from "react-router-dom";
-import "../../App.css";
+import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import Footer from "./Footer";
 function Home() {
   const wrapper = {
     width: "100%",
@@ -72,7 +77,7 @@ function Home() {
             />
           </Col>
           <Col md={6}>
-            <h2 style={{ color: "#f0c19e" }}>Code Websites From Any Where</h2>
+            <h2 style={{ color: "#f0c19e" }}>Coding Oasis</h2>
             <h5
               style={{
                 textAlign: "justify",
@@ -80,15 +85,14 @@ function Home() {
                 paddingTop: "10px",
               }}
             >
-              With this online code editor, you can edit HTML, CSS and
-              JavaScript code, and live preview of site instantly.
+             Revolutionize your coding experience with our online editor! Edit HTML, CSS, and JavaScript seamlessly while enjoying an instant live preview of your site. Elevate your coding game effortlessly!
             </h5>
             <Button variant="primary" style={btnStyle} as={Link} to="/web">
-              WebDev CodeEditor
+              Frontend Editor
             </Button>
 
             <h2 style={{ color: "#f0c19e", paddingTop: "70px" }}>
-              Generate README for github in fraction of Seconds
+            README Rapid: Craft Your Project's Story in Seconds!
             </h2>
             <h5
               style={{
@@ -97,15 +101,30 @@ function Home() {
                 paddingTop: "10px",
               }}
             >
-              Online markdown editor, with custom toolbar to help you make your
-              readme easily.
+              Introducing an online markdown editor designed to make crafting your README a breeze! Our platform boasts a user-friendly interface and a customizable toolbar, empowering you to effortlessly create stunning documentation. Say goodbye to markdown headaches and hello to a seamless writing experience. Your README just got an upgrade!
             </h5>
             <Button variant="primary" style={btnStyle} as={Link} to="/markdown">
-              Markdown CodeEditor
+              README Generator
+            </Button>
+            <h2 style={{ color: "#f0c19e", paddingTop: "70px" }}>
+            PyCode !
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "rgb(154 179 205)",
+                paddingTop: "10px",
+              }}
+            >
+              "PyCode Hub: Your Swift Python Playground! Write, run, and experiment with Python snippets instantly in our interactive and user-friendly PyCode compiler. Unleash your coding creativity on the fly!"
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/python">
+             Run Python
             </Button>
           </Col>
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 }

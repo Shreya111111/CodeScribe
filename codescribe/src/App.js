@@ -1,8 +1,9 @@
 import React from "react";
-import Home from "./components/webdev/Home";
-import WebEditor from "./components/webdev/webdev";
+import Home from "./components/Home";
+import WebEditor from "./components/Frontend";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "../App.css";
+import PythonEditor from "./components/Pythoneditor"
+import "./App.css";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/web" component={WebEditor} />
+        <Route path="/python" component={PythonEditor} />
        
       </Switch>
     </Router>

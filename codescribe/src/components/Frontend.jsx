@@ -1,26 +1,25 @@
 import React, { useState, useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
-import Editor from "./WebEditor/Editor";
+import Editor from "./webdev/Frontendeditor";
 import Footer from "./Footer";
-import { useLocalStorage } from "../../hooks/LocalStorage";
+import { useLocalStorage } from "../components/hooks/LocalStorage";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../App.css";
+import "../App.css";
 
-function LaunguageManager() {
+function LanguageManager() {
   const getBlobURL = (code, type) => {
     const blob = new Blob([code], { type });
     return URL.createObjectURL(blob);
   };
 
   const htmlDefault = `<h2>Hello User</h2>`;
+  const cssDefault = `body {
+    text-align: center;
+  }`;
 
-  const cssDefault = `body{
-  text-align:center;
-}`;
-
-  const [htmlVal, updateHtmlStrorage] = useLocalStorage("html", htmlDefault);
-  const [cssVal, updateCssStrorage] = useLocalStorage("css", cssDefault);
-  const [jsVal, updateJsStrorage] = useLocalStorage("js", "");
+  const [htmlVal, updateHtmlStorage] = useLocalStorage("html", htmlDefault);
+  const [cssVal, updateCssStorage] = useLocalStorage("css", cssDefault);
+  const [jsVal, updateJsStorage] = useLocalStorage("js", "");
 
   const [html, updateHtml] = useState(htmlVal);
   const [css, updateCss] = useState(cssVal);
@@ -43,15 +42,19 @@ function LaunguageManager() {
       </html>`;
 
   useEffect(() => {
-    setTimeout(() => {}, 500);
-    updateHtmlStrorage(html);
-    updateCssStrorage(css);
-    updateJsStrorage(js);
-  }, [html, css, js]);
+    const timeoutId = setTimeout(() => {
+      updateHtmlStorage(html);
+      updateCssStorage(css);
+      updateJsStorage(js);
+    }, 500);
+
+    // Cleanup function to clear the timeout on component unmount
+    return () => clearTimeout(timeoutId);
+  }, [html, css, js, updateHtmlStorage, updateCssStorage, updateJsStorage]);
 
   return (
     <div>
-      <Container fluid={true} className="pane pane-top">
+        <Container fluid={true} className="pane pane-top">
         <Row noGutters={true}>
           <Col md={4} className="editor-lang">
             <div className="editor-text">
@@ -105,8 +108,9 @@ function LaunguageManager() {
       </Container>
 
       <Footer />
+    
     </div>
   );
 }
 
-export default LaunguageManager;
+export default LanguageManager;
