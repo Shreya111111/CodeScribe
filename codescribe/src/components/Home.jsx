@@ -1,12 +1,9 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import sh1 from "../Assets/web-development_2282272.png";
-import sh2 from "../Assets/coding_1045981.png";
-import sh3 from "../Assets/html_6443507.png";
-import sh6 from "../Assets/web-development_2282272.png";
 import homeImg from "../Assets/971.jpg";
 import { Link } from "react-router-dom";
+import Header from "./navbar/Header";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Footer";
@@ -20,31 +17,7 @@ function Home() {
     position: "relative",
   };
 
-  const shape1 = {
-    left: 0,
-    right: 0,
-    margin: "auto",
-    top: "90px",
-    position: "absolute",
-  };
-
-  const shape2 = {
-    right: "380px",
-    top: "280px",
-    position: "absolute",
-  };
-
-  const shape3 = {
-    right: "88px",
-    top: "230px",
-    position: "absolute",
-  };
-
-  const shape6 = {
-    right: "272px",
-    bottom: "0px",
-    position: "absolute",
-  };
+  
 
   const btnStyle = {
     backgroundColor: "#5c4389",
@@ -53,13 +26,10 @@ function Home() {
 
   return (
     <div
-      style={{ backgroundColor: "#2a283e", minHeight: "100vh", height: "auto" }}
+      style={{ backgroundColor: "#f8f8f8", minHeight: "100vh", height: "auto" }}
     >
+      <Header/>
       <Container style={wrapper}>
-        <img src={sh1} alt="fig1" style={shape1} className="shape" />
-        <img src={sh2} alt="fig2" style={shape2} className="shape" />
-        <img src={sh3} alt="fig3" style={shape3} className="shape" />
-        <img src={sh6} alt="fig6" style={shape6} className="shape" />
         <Row
           className="text-center"
           style={{
@@ -77,11 +47,11 @@ function Home() {
             />
           </Col>
           <Col md={6}>
-            <h2 style={{ color: "#f0c19e" }}>Coding Oasis</h2>
+            <h2 style={{ color: "#9d7b54" }}>Coding Oasis</h2>
             <h5
               style={{
                 textAlign: "justify",
-                color: "rgb(154 179 205)",
+                color: "RGB(94, 114, 143)",
                 paddingTop: "10px",
               }}
             >
@@ -91,13 +61,13 @@ function Home() {
               Frontend Editor
             </Button>
 
-            <h2 style={{ color: "#f0c19e", paddingTop: "70px" }}>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
             README Rapid: Craft Your Project's Story in Seconds!
             </h2>
             <h5
               style={{
                 textAlign: "justify",
-                color: "rgb(154 179 205)",
+                color: "RGB(94, 114, 143)",
                 paddingTop: "10px",
               }}
             >
@@ -106,13 +76,13 @@ function Home() {
             <Button variant="primary" style={btnStyle} as={Link} to="/markdown">
               README Generator
             </Button>
-            <h2 style={{ color: "#f0c19e", paddingTop: "70px" }}>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
             PyCode !
             </h2>
             <h5
               style={{
                 textAlign: "justify",
-                color: "rgb(154 179 205)",
+                color: "RGB(94, 114, 143)",
                 paddingTop: "10px",
               }}
             >
