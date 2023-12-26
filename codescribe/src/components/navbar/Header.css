@@ -58,25 +58,3 @@
     margin-right: 10px;  
     color: white;
 }
-
-.nav__itemLineOne {
-    font-size: 10px;
-}
-
-.nav__itemLineTwo {
-    font-size: 13px;
-    font-weight: 800; 
-}
-
-.nav__itemBasket {
-    display: flex;
-    align-items: center;
-    color: white;
-    margin-right: 50px;
-    margin-left: 10px;
-}
-
-.nav__basketCount {
-    margin-left: 10px;
-    margin-right: 10px;
-}
