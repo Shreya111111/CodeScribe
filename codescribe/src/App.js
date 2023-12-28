@@ -6,6 +6,7 @@ import PythonEditor from "./components/Pythoneditor";
 import MarkdownEditor from "./components/MarkdownEditor.jsx";
 import "./App.css";
 import Loginuser from "./components/Loginuser.jsx";
+import JavaEditor from "./components/JavaEditor.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/markdown" component={MarkdownEditor} />
         <Route path="/python" component={PythonEditor} />
         <Route path="/login" component={Loginuser} />
+        <Route path="/java" component={JavaEditor} />
        
       </Switch>
     </Router>
