@@ -86,10 +86,25 @@ function Home() {
                 paddingTop: "10px",
               }}
             >
-              "PyCode Hub: Your Swift Python Playground! Write, run, and experiment with Python snippets instantly in our interactive and user-friendly PyCode compiler. Unleash your coding creativity on the fly!"
+              PyCode Hub: Your Swift Python Playground! Write, run, and experiment with Python snippets instantly in our interactive and user-friendly PyCode compiler. Unleash your coding creativity on the fly!
             </h5>
             <Button variant="primary" style={btnStyle} as={Link} to="/python">
              Run Python
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            JavaPilot!
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+             Power up your Java programming with our sleek code editor—where innovation meets efficiency. Write, compile, and run your code effortlessly, turning your ideas into reality with every keystroke.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/java">
+            Java Execute
             </Button>
           </Col>
         </Row>
