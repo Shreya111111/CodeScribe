@@ -106,6 +106,36 @@ function Home() {
             <Button variant="primary" style={btnStyle} as={Link} to="/java">
             Java Execute
             </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            NebulaC
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+             Nebula C is a revolutionary C compiler that transcends traditional boundaries, propelling code into a cosmic realm of innovation and efficiency. With its stellar capabilities, Nebula C transforms complexities into elegant solutions, offering developers a celestial experience in software development.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/c">
+            Code C
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            CodeCraft-C++
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+             "CodeCraftC++ is not just a compiler, it's a masterful compiler sculptor, chiseling your code into a masterpiece of efficiency and elegance. With its artful blend of precision and innovation, every compilation becomes a journey through the realm where code transcends into craftsmanship."
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/cpp">
+            Execute cpp
+            </Button>
           </Col>
         </Row>
       </Container>
