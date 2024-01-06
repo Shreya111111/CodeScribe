@@ -131,10 +131,85 @@ function Home() {
                 paddingTop: "10px",
               }}
             >
-             "CodeCraftC++ is not just a compiler, it's a masterful compiler sculptor, chiseling your code into a masterpiece of efficiency and elegance. With its artful blend of precision and innovation, every compilation becomes a journey through the realm where code transcends into craftsmanship."
+             CodeCraftC++ is not just a compiler, it's a masterful compiler sculptor, chiseling your code into a masterpiece of efficiency and elegance. With its artful blend of precision and innovation, every compilation becomes a journey through the realm where code transcends into craftsmanship.
             </h5>
             <Button variant="primary" style={btnStyle} as={Link} to="/cpp">
             Execute cpp
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            C# Maestro
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+            Unleash the Power of C# with SharpShaper, your go-to compiler for crafting sleek, efficient, and feature-rich applications. Are you ready to elevate your C# coding experience to new heights?
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/csharp">
+            Run c#
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            GoGlider
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+            Elevate your coding experience with GoGlider, the compiler that propels your Go code to new heights of simplicity and speed.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/go">
+            Soar High with Go
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            RustRover
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+             Roam the coding wilderness fearlessly with RustRover, the compiler that ensures your Rust code is rugged, reliable, and ready for any journey.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/rust">
+            Code Rust
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            PHPPhoenix
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+            Ignite your web development projects with PHPPhoenix, the compiler that brings vitality and dynamism to your PHP scripts, making them soar.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/php">
+            Run PHP
+            </Button>
+            <h2 style={{ color: "#9d7b54", paddingTop: "70px" }}>
+            BashBlitz
+            </h2>
+            <h5
+              style={{
+                textAlign: "justify",
+                color: "RGB(94, 114, 143)",
+                paddingTop: "10px",
+              }}
+            >
+            Unleash the power of Bash scripting with BashBlitz, your compact and lightning-fast compiler for orchestrating scripting symphonies effortlessly.
+            </h5>
+            <Button variant="primary" style={btnStyle} as={Link} to="/bash">
+            BashScript!
             </Button>
           </Col>
         </Row>
